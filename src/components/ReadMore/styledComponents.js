@@ -45,8 +45,9 @@ export const Para = styled.p`
 
 export const ReadButton = styled.button`
   border-width: 0;
-  border-radius: 18px;
-  padding: 5px 10px;
+  border-radius: 11px;
+  padding: 9px 20px;
   background-color: #1f81ff;
   color: white;
+  font-family: 'Roboto';
 `

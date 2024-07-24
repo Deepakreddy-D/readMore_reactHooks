@@ -13,17 +13,17 @@ import {
 const ReadMore = props => {
   const {reactHooksDescription} = props
 
-  const [para, showPara] = useState(false)
+  const [isMore, showIsMore] = useState(false)
 
-  const buttonName = para ? 'Read More' : 'Read Less'
+  const buttonName = isMore ? 'Read Less' : 'Read More'
 
-  const text = para
-    ? reactHooksDescription.slice(0, 170)
-    : reactHooksDescription
+  const text = isMore
+    ? reactHooksDescription
+    : reactHooksDescription.slice(0, 170)
 
   const onChangeReadButton = () => {
-    // para = text.slice(0,100)
-    showPara(prevState => !prevState)
+    // isMore = text.slice(0,100)
+    showIsMore(prevState => !prevState)
   }
 
   return (
